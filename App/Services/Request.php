@@ -33,7 +33,7 @@ class Request extends SimpleService
 
     public function get(string $key)
     {
-        return trim($_GET[$key]) ?? null; //Если нет $key возвращаем null
+        return trim($_GET[$key]) ?? null; //Если нет $key возвращаем null trim чистит от html
     }
 
     public function post(string $key)
