@@ -23,14 +23,9 @@ class CommentsController extends SimpleController
     <link rel="stylesheet" href="public/css/index.css">
 </head>
 <body>
-    <div id="app">
-            <h1>{{ product }}</h1>
-    </div>
+   <div id="app"></div>
 </body>
 <script src="public/js/index.js"></script>
-<script>
-
-</script>
 </html>
 HTML;
     }

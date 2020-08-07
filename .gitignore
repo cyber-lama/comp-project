@@ -4,8 +4,10 @@
 
 /node_modules
 /public/hot
+/public/node_modules/
 /public/storage
 /storage/*.key
+/public/package-lock.json
 /vendor
 .env
 .env.backup
