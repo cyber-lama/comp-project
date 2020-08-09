@@ -18,6 +18,7 @@
         ]
     },
     "require": {
-        "symfony/var-dumper": "^5.1"
+        "symfony/var-dumper": "^5.1",
+      "ext-http": "*"
     }
 }

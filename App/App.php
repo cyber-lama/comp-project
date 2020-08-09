@@ -49,15 +49,16 @@ class App
     public function init()
     {
         $requestArray = explode('/', $_SERVER['REQUEST_URI']);
+
         if (!$requestArray[1]) {
-            $controller = 'App\\Controllers\\' . 'Comments' . 'Controller';
+            $controller = 'App\\Controllers\\' . 'ChatController';
         } else {
             $controller = 'App\\Controllers\\' . ucfirst($requestArray[1]) . 'Controller';
         }
         $method = explode('?', $requestArray[2])[0];
 
         $controllerClass = new $controller();
-//        dd($controller, $method, $requestArray);
+//       dd($controller, $method, $requestArray);
 
         if (!$method) {
             return $controllerClass->index();

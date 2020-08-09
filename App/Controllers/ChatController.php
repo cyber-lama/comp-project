@@ -3,10 +3,9 @@
 
 namespace App\Controllers;
 
-
 use App\Core\SimpleController;
 
-class CommentsController extends SimpleController
+class ChatController extends SimpleController
 {
     public function index()
     {
